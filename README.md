@@ -11,8 +11,8 @@ docker-compose up -d
 docker-compose down
 ```
 
-- Browser api url: `http://localhost:8000/api/v1/`
-- Browser admin url: `http://localhost:8000/admin/`
+- Browser api url: [http://localhost:8000/api/v1/](http://localhost:8000/api/v1/)
+- Browser admin url: [http://localhost:8000/admin/](http://localhost:8000/admin/)
 
 
 #### === Build & run dev-mode ===
@@ -50,6 +50,6 @@ docker-compose -f docker-compose.test.yml down
 
 #### === Params ===
 - `django_app/config/{stage}/.env`
-    - `DB_AUTO_MIGRATE` for applying migrations on startup
-    - `DB_LOADDATA_SAMPLE` for loading sample data on startup
-    - `COLLECT_STATIC` for collecting static on startup (test-mode only)
+    - `DB_AUTO_MIGRATE` for applying migrations on every startup
+    - `DB_LOADDATA_SAMPLE` for loading sample data on every startup
+    - `COLLECT_STATIC` for collecting static on every startup (test-mode only)
