@@ -11,8 +11,8 @@ docker-compose up -d
 docker-compose down
 ```
 
-Browser api url: `http://localhost:8000/api/v1/`
-Browser admin url: `http://localhost:8000/admin/`
+- Browser api url: `http://localhost:8000/api/v1/`
+- Browser admin url: `http://localhost:8000/admin/`
 
 
 #### === Build & run dev-mode ===
@@ -40,7 +40,7 @@ docker-compose -f docker-compose.test.yml down
 #### === makemigrations (on dev-mode ONLY) ===
 
 1. Startup dev-mode
-2. `./util/dev/manage.sh makemigrations`
+2. Run `./util/dev/manage.sh makemigrations`
 
 
 ### === createsuperuser ===
