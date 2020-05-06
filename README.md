@@ -1,4 +1,4 @@
-####[Task description](task.pdf)
+#### [Task description](task.pdf)
 
 
 #### === Simply usage ===
@@ -33,11 +33,15 @@ docker-compose -f docker-compose.test.yml down
 1. Startup {stage}
 2. Run `./util/{stage}/manage.sh command`
 
-Ex: `./util/dev/manage.sh makemigrations`
+
+#### === makemigrations (on dev-mode ONLY) ===
+
+1. Startup dev-mode
+2. `./util/dev/manage.sh makemigrations`
 
 
 #### === Params ===
 - `django_app/config/{stage}/.env`
     - `DB_AUTO_MIGRATE` for applying migrations on startup
     - `DB_LOADDATA_SAMPLE` for loading sample data on startup
-    - `COLLECT_STATIC` for collecting static on startup
+    - `COLLECT_STATIC` for collecting static on startup (test-mode only)
