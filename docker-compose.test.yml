@@ -22,7 +22,7 @@ services:
     ports:
       - 8000:80
     volumes:
-      - static_data_test:/app/static
+      - static_data_test:/app/static/
     depends_on:
       - web
     restart: always
