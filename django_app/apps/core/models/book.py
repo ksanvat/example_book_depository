@@ -24,7 +24,6 @@ class Book(models.Model):
         return self.title
 
 
-# TODO: add a separate email service due to performance reasons
 @receiver(post_save, sender=Book)
 def on_create_book(sender, instance, created, **kwargs):
     if created:

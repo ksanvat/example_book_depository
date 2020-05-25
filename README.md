@@ -53,3 +53,10 @@ docker-compose -f docker-compose.test.yml down
     - `DB_AUTO_MIGRATE` for applying migrations on every startup
     - `DB_LOADDATA_SAMPLE` for loading sample data on every startup
     - `COLLECT_STATIC` for collecting static on every startup (test-mode only)
+
+
+### === TODO ===
+- сделать отправку email'ов асинхронно
+- добавить пагинацию
+- метод search перенести в сущность "книги"
+- добавить тесты
